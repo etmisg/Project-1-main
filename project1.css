@@ -15,12 +15,20 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+a:focus, .navbar-brand:focus {
+    outline: none;
+}
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
 .navbar-brand {
     font-size: 2rem;
     font-weight: bold;
     color: #007bff !important;
 }
-
 .navbar-nav .nav-link {
     color: #495057 !important;
     padding: 10px 20px;
@@ -31,6 +39,11 @@ header {
     color: #fff !important;
     background-color: #007bff;
     border-radius: 5px;
+}
+
+.navbar-nav {
+    list-style-type: none;
+    padding-left: 0;
 }
 
 @media (max-width: 768px) {
